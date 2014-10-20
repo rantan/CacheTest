@@ -13,6 +13,7 @@
 		B64C37D619F02B770040B621 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B64C37D519F02B770040B621 /* Images.xcassets */; };
 		B64C37D919F02B770040B621 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B64C37D719F02B770040B621 /* LaunchScreen.xib */; };
 		B64C37E519F02B770040B621 /* CacheTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64C37E419F02B770040B621 /* CacheTestTests.swift */; };
+		B6B7B21919F41DC000E70567 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B7B21819F41DC000E70567 /* SessionDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		B64C37DE19F02B770040B621 /* CacheTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CacheTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B64C37E319F02B770040B621 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B64C37E419F02B770040B621 /* CacheTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheTestTests.swift; sourceTree = "<group>"; };
+		B6B7B21819F41DC000E70567 /* SessionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				B64C37CE19F02B770040B621 /* AppDelegate.swift */,
+				B6B7B21819F41DC000E70567 /* SessionDelegate.swift */,
 				B64C37D019F02B770040B621 /* ViewController.swift */,
 				B64C37D219F02B770040B621 /* Main.storyboard */,
 				B64C37D519F02B770040B621 /* Images.xcassets */,
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6B7B21919F41DC000E70567 /* SessionDelegate.swift in Sources */,
 				B64C37D119F02B770040B621 /* ViewController.swift in Sources */,
 				B64C37CF19F02B770040B621 /* AppDelegate.swift in Sources */,
 			);
@@ -405,6 +409,7 @@
 				B64C37EA19F02B770040B621 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B64C37EB19F02B770040B621 /* Build configuration list for PBXNativeTarget "CacheTestTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +418,7 @@
 				B64C37ED19F02B770040B621 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

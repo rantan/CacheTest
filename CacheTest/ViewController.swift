@@ -21,5 +21,9 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func tap(sender: AnyObject) {
+        let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        appDelegate.testCache()
+    }
 }
 
