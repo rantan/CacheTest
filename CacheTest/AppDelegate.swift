@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, NSURLSessionDelegate, NSU
     
     var session: NSURLSession!
     
-    let cachePolicy: NSURLRequestCachePolicy = .ReturnCacheDataElseLoad
+    let cachePolicy: NSURLRequestCachePolicy = .UseProtocolCachePolicy
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
