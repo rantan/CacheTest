@@ -17,12 +17,22 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oce-wJ-QI8">
-                                <rect key="frame" x="198" y="280" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                                <rect key="frame" x="182" y="47" width="85" height="30"/>
+                                <state key="normal" title="No Delegate">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="tap:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="X6V-ug-oy3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t54-c3-K8L">
+                                <rect key="frame" x="182" y="145" width="61" height="30"/>
+                                <state key="normal" title="Delegate">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="delegateTap:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7Sk-CF-Mzd"/>
+                                    <action selector="tap:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="UKv-gx-OfU"/>
                                 </connections>
                             </button>
                         </subviews>

@@ -9,7 +9,7 @@
 import Foundation
 
 class SessionDelegate: NSObject, NSURLSessionDelegate, NSURLSessionTaskDelegate, NSURLSessionDataDelegate {
-    
+
     func URLSession(session: NSURLSession!, dataTask: NSURLSessionDataTask!, didReceiveResponse response: NSURLResponse!, completionHandler: (disposition :NSURLSessionResponseDisposition) -> Void) {
         println("didReceiveResponse")
         // ヘッダーを受信した後の処理を書く
@@ -41,6 +41,12 @@ class SessionDelegate: NSObject, NSURLSessionDelegate, NSURLSessionTaskDelegate,
     
     func URLSession(session: NSURLSession, task: NSURLSessionTask, didCompleteWithError error: NSError?) {
         println("didCompleteWithError")
+        
+/*        if let response = task.response as NSHTTPURLResponse {
+            response.
+        }
+*/
+
         println(task.response?.description)
         //println(error?.description)
     }

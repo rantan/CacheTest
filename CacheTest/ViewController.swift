@@ -10,9 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var appDelegate: AppDelegate!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,10 +23,12 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func delegateTap(sender: AnyObject) {
+        self.appDelegate.testCacheDelegate()
+    }
 
     @IBAction func tap(sender: AnyObject) {
-        let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
-        appDelegate.testCache()
+        self.appDelegate.testCacheNoDelegate()
     }
 }
 
